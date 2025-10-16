@@ -1,0 +1,159 @@
+Day-6
+================
+OPERATORS
+------------
+Operator is a symbol that represents a specific operation on one or more operands.
+
+Ex:a+b;
+in the above a and b are called operands
++ is called an operator.
+
+Java supports different types of operators
+-------------------------------------------
+such as:
+Arithmetic operators
+String concatenation operator(+)
+increment and decrement operators
+relational operators
+bitwise operators
+logical operators
+assignment operators
+ternary or conditional operator(?)
+
+Arithmetic operators
+-----------------------
+(+,-,%,/)
+===========
+%-remainder
+/-quotient
+
+if we apply any arithematic operation between 2 vriables a&b,the result type is always max(int,type of a,type of b)
+example
+--------
+byte+byte=int
+byte+short=int
+short+short=int
+short+long=long
+double+float=double
+int+double=double
+char+char=int
+char+int=int
+char+double=double
+
+System.out.println('a' +'b');//output:195
+System.out.println('a' +1);//output:98
+System.out.println('a' +1.2);//output:98.2
+
+System.out.println(10/0);//arithematic expection(only integers)
+System.out.println(10.0/0);//infinity
+System.out.println(-10.0/0');//-infinity
+System.out.println(0.0/0');//not a number(NAN)
+
+
+
+2.String concatenation operator(+)
+---------------------------------------
+The only overloaded operator in java is'+' operator .some times it acts as an addition operator and sometimes it acts as string concatenation a operator
+if acts as one argument is String type then + operator is act as String concatenation operator.and if both arguments are number type .then operator is act as arithmetic operator like addition operator.
+
+Increment and decrement operators
+-----------------------------------
+++,--
+pre-increment                                     post -increment
+----------------------------------------------------------------------
+syntax                                             syntax
+++a                                                     a++
+
+pre-decrement                                        post-decrement
+----------------------------------------------------------------------
+syntax                                                    syntax
+--a                                                       a--
+
+expression             initial value of x                value of y                      final of x
+======================================================================================================
+y=++x;                       10                              11                             11
+y=x++;                       10                              10                             11
+y=--x;                       10                              9                               9
+y=x--                        10                              10                              9
+======================================================================================================
+a=97
+output 96
+
+A
+64
+
+98==>b
+a
+
+4.relational operator
+------------------------------
+<,<=,>,>=,==,!=
+<- either less than or equal (	10<20)||(10<=10)
+>-either greater than or equal
+=================================
+5. Bitwise operators
+----------------------
+AND,OR,NOT,
+AND: if both are true return true
+a       b       a&b
+====================
+f       T       F
+f       T       F
+T       F       F
+T       T       T
+====================
+OR: if both are false return false.
+a       b       a|b
+====================
+F        F        F
+F        T        T
+T        F        T
+T        T        T
+====================
+e-or:if both are different return true
+
+a       b       a^b
+====================
+F        F        F
+F        T        T
+T        F        T
+T        T        T
+====================
+
+6.logical operators
+=======================
+AND(&&),OR(||)
+AND: if both are true return true
+a       b       a&&b
+====================
+F        F        F
+F        T        F
+T        F        F
+T        T        T
+====================
+OR: if both are false return false.
+a       b       a||b
+====================
+F        F        F
+F        T        T
+T        F        T
+T        T        T
+====================
+7.Assignment operators
+===============================
++=,-=,*=,/=,%=
+a=a+b;===>a+=b;
+highly recommended so we use assingnment operator 
+================================================
+8.Ternary or conditional operator(?)
+=======================================
+syntax
+-------------
+(condition)?exp1:exp2
+
+if the condition is true expression1 will be evaluated
+if the condition is false exp2 will be evaluated
+
+
+
+
